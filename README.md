@@ -1,5 +1,4 @@
 # Sports-News-Collector
----
 - Sports-News-Collector collects sports news and offers several services.  
 - It is provided using various models provided by [Pororo](https://github.com/kakaobrain/pororo).  
 
