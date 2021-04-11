@@ -9,13 +9,13 @@
 pip install sports_news_collector
 ```  
 ## Usage
-- After the import, you can check the events currently supported by the `sports_news_collector` through the following commands  
+- After the import, you can check the events currently supported by the `sports_news_collector` through the following commands.    
 ```python
 >>> from sports_news_collector import SportsNewsCollector
 >>> SportsNewsCollector.available_events()
 ['kbaseball', 'wbaseball', 'kfootball', 'wfootball', 'basketball', 'volleyball', 'golf', 'general', 'esports']
 ```  
-- If you want to collect news from a specific event, you can put the event name in the `event` argument    
+- If you want to collect news from a specific event, you can put the event name in the `event` argument.      
 ```python
 >>> from sports_news_collector import SportsNewsCollector
 >>> collector = SportsNewsCollector(event='wfootball')
@@ -25,20 +25,20 @@ pip install sports_news_collector
 >>> collector.collect()
 ```   
 
-- Then, it is sent to your e-mail through the following procedure    
--> 1.  Collect the news of the sport you have chosen  
--> 2.  Summarize the news and analyze the sentiment of the news    
--> 3.  Send them to your email periodically  
+- Then, it is sent to your e-mail through the following procedure.      
+-> 1.  Collect the news of the sport you have chosen.    
+-> 2.  Summarize the news and analyze the sentiment of the news.      
+-> 3.  Send them to your email periodically.    
   
-- If you want to send to your email periodically, I recommend using the colab environment   
-- Please click [here](https://github.com/hasangchun/sports_news_collector/blob/main/make_sports_news.ipynb) for details  
+- If you want to send to your email periodically, I recommend using the colab environment.     
+- Please click [here](https://github.com/hasangchun/sports_news_collector/blob/main/make_sports_news.ipynb) for details.    
 
 
 
 ## Information
 ![sports_news](https://user-images.githubusercontent.com/54731898/113507570-5fc78680-9586-11eb-8de1-5982f6f4c0c2.jpg)    
 
-I got news information by crawling the recommended news of Naver Sports News    
+I got news information by crawling the recommended news of naver sports news.      
 
 
 ## Result
