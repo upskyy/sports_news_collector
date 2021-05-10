@@ -61,9 +61,8 @@ class NewsCrawler(object):
         return url_list
 
     def _news_crawling(self, url: str) -> str:
-        # 스포츠 종목과 언론사마다 틀이 달라서 한번에 예외처리 하기가 힘들다.
-        START_EXCEPTION = []  # 다른 스포츠와 다르게 국내 야구에서는 기자 이름을 맨 뒤에 [xxx 기자] 형태로 사용함.
-        END_EXCEPTION = ['▶', '@', '┌']  # 국내 야구에서는 앞부분 사진 이후에 기자 이름 앞에 ⓒ 표시 있음.
+        START_EXCEPTION = [] 
+        END_EXCEPTION = ['▶', '@', '┌']  
 
         html = requests.get(url)
         soup = BeautifulSoup(html.text, 'html.parser')
